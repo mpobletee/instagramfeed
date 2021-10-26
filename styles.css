@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(218, 213, 213);
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    color: white;
+    background-color: grey;
+}
+.fa-square:before{
+    color: white;
+}
+.fa-table-cells:before, .fa-th:before{
+    color: white;
+}

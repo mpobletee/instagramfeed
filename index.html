@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Instagram</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="/styles.css">
+<script src=""></script>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+
+            <a class="navbar-brand col-10 px-4" href="#"><i class="fab fa-instagram px-1"></i>Instagram</a>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Create a new post
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-outline-dark"><i class="fas fa-camera"></i></button>
+                            <button type="button" class="btn btn-outline-dark"><i
+                                    class="fas fa-map-marker-alt"></i></button>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-success">Publicar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-cog"></i>
+                        </a>
+                        
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="right: 0; left: auto;">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <hr>
+                            <li><a class="dropdown-item" href="#">Log out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- <-- contenido -->
+
+    <!-- selector -->
+    <ul class="nav nav-pills justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="pill" href="#home"><i class="fas fa-th"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="pill" href="#menu1"><i class="fas fa-square"></i></a>
+        </li>
+    </ul>
+
+    <!-- grid -->
+    <div class="tab-content">
+        <div class="tab-pane container active" id="home">
+            <div class="container">
+                <div class="row p-1">
+                    <div class="col-4">
+                        <img src="https://picsum.photos/600/400" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://picsum.photos/600/401" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://picsum.photos/600/402" class="img-fluid" alt="...">
+                    </div>
+                </div>
+                <div class="row p-1">
+                    <div class="col-4">
+                        <img src="https://picsum.photos/600/403" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://picsum.photos/600/404" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://picsum.photos/600/405" class="img-fluid" alt="...">
+                    </div>
+                </div>
+                <div class="row p-1">
+                    <div class="col-4">
+                        <img src="https://picsum.photos/600/406" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://picsum.photos/600/407" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://picsum.photos/600/408" class="img-fluid" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--feed-->
+        <div class="tab-pane container fade" id="menu1">
+
+            <div class="row justify-content-center mb-2">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between">
+                            <h2>My first photo</h2>
+                            <h6>12/14</h6>
+                        </div>
+                        <div class="card-body">
+                            <img src="https://picsum.photos/600/400" class="img-fluid">
+                        </div>
+                        <div class="card-footer p-2">
+                            <h6 class="fw-bold">20 Likes</h6>
+                            <p>Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                            <div class="d-flex align-items-center">
+                                <i class="far fa-heart p-1"></i><input type="text" class="form-control form-control-sm p-1"
+                                    placeholder="comment"><i class="fas fa-ellipsis-v p-1"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-2">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between">
+                            <h2>My first photo</h2>
+                            <h6>12/14</h6>
+                        </div>
+                        <div class="card-body">
+                            <img src="https://picsum.photos/600/401" class="img-fluid">
+                        </div>
+                        <div class="card-footer p-2">
+                            <h6 class="fw-bold">20 Likes</h6>
+                            <p>Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                            <div class="d-flex align-items-center">
+                                <i class="far fa-heart p-1"></i><input type="text" class="form-control form-control-sm p-1"
+                                    placeholder="comment"><i class="fas fa-ellipsis-v p-1"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-2">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between">
+                            <h2>My first photo</h2>
+                            <h6>12/14</h6>
+                        </div>
+                        <div class="card-body">
+                            <img src="https://picsum.photos/600/402" class="img-fluid">
+                        </div>
+                        <div class="card-footer p-2">
+                            <h6 class="fw-bold">20 Likes</h6>
+                            <p>Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                            <div class="d-flex align-items-center">
+                                <i class="far fa-heart p-1"></i><input type="text" class="form-control form-control-sm p-1"
+                                    placeholder="comment"><i class="fas fa-ellipsis-v p-1"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-2">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between">
+                            <h2>My first photo</h2>
+                            <h6>12/14</h6>
+                        </div>
+                        <div class="card-body">
+                            <img src="https://picsum.photos/600/403" class="img-fluid">
+                        </div>
+                        <div class="card-footer p-2">
+                            <h6 class="fw-bold">20 Likes</h6>
+                            <p>Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                            <div class="d-flex align-items-center">
+                                <i class="far fa-heart p-1"></i><input type="text" class="form-control form-control-sm p-1"
+                                    placeholder="comment"><i class="fas fa-ellipsis-v p-1"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-2">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between">
+                            <h2>My first photo</h2>
+                            <h6>12/14</h6>
+                        </div>
+                        <div class="card-body">
+                            <img src="https://picsum.photos/600/404" class="img-fluid">
+                        </div>
+                        <div class="card-footer p-2">
+                            <h6 class="fw-bold">20 Likes</h6>
+                            <p>Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                            <div class="d-flex align-items-center">
+                                <i class="far fa-heart p-1"></i><input type="text" class="form-control form-control-sm p-1"
+                                    placeholder="comment"><i class="fas fa-ellipsis-v p-1"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center mb-2">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between">
+                            <h2>My first photo</h2>
+                            <h6>12/14</h6>
+                        </div>
+                        <div class="card-body">
+                            <img src="https://picsum.photos/600/405" class="img-fluid">
+                        </div>
+                        <div class="card-footer p-2">
+                            <h6 class="fw-bold">20 Likes</h6>
+                            <p>Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                            <div class="d-flex align-items-center">
+                                <i class="far fa-heart p-1"></i><input type="text" class="form-control form-control-sm p-1"
+                                    placeholder="comment"><i class="fas fa-ellipsis-v p-1"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-2">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between">
+                            <h2>My first photo</h2>
+                            <h6>12/14</h6>
+                        </div>
+                        <div class="card-body">
+                            <img src="https://picsum.photos/600/406" class="img-fluid">
+                        </div>
+                        <div class="card-footer p-2">
+                            <h6 class="fw-bold">20 Likes</h6>
+                            <p>Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                            <div class="d-flex align-items-center">
+                                <i class="far fa-heart p-1"></i><input type="text" class="form-control form-control-sm p-1"
+                                    placeholder="comment"><i class="fas fa-ellipsis-v p-1"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-2">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between">
+                            <h2>My first photo</h2>
+                            <h6>12/14</h6>
+                        </div>
+                        <div class="card-body">
+                            <img src="https://picsum.photos/600/407" class="img-fluid">
+                        </div>
+                        <div class="card-footer p-2">
+                            <h6 class="fw-bold">20 Likes</h6>
+                            <p>Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                            <div class="d-flex align-items-center">
+                                <i class="far fa-heart p-1"></i><input type="text" class="form-control form-control-sm p-1"
+                                    placeholder="comment"><i class="fas fa-ellipsis-v p-1"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-2">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between">
+                            <h2>My first photo</h2>
+                            <h6>12/14</h6>
+                        </div>
+                        <div class="card-body">
+                            <img src="https://picsum.photos/600/408" class="img-fluid">
+                        </div>
+                        <div class="card-footer p-2">
+                            <h6 class="fw-bold">20 Likes</h6>
+                            <p>Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                            <div class="d-flex align-items-center">
+                                <i class="far fa-heart p-1"></i><input type="text" class="form-control form-control-sm p-1"
+                                    placeholder="comment"><i class="fas fa-ellipsis-v p-1"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
